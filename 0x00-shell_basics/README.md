@@ -1,5 +1,5 @@
 #Holberton Project for learning Shell basics
-0. prints the path name of the current working directory
+- 0. prints the path name of the current working directory
 1. lists the contents of the current directory
 2. changes the working directory to the home directory
 3. displays the current directory in a long format
