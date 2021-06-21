@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #prints "Holberton School" for i being 0 through 9(10x)
 for i in {0..9}
-	do
+do
 	echo "Holberton School"
 done
-
+i=$i
