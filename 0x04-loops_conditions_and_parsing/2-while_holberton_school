@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#prints "Holberton School" then incriments i by 1 while i is less than 10 (10x)
+i=0
+
+while [ $i -lt 10 ]
+	do
+	echo "Holberton School"
+	i=$(($i+1))
+done
