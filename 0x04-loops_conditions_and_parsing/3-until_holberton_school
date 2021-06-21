@@ -2,7 +2,7 @@
 #prints "Holberton School" and incriments i by 1 until i is greater than 9
 i=0
 
-until [ $i -gt 9 ]
+until ((i>9))
 	do
 	echo "Holberton School"
 	((i++))
