@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 #prints "Holberton School" and incriments i by 1 until i is greater than 9
 i=0
 
