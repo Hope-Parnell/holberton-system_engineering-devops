@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Prints "Holberton School 10x with "Hi" after the 9th interation
+i=0
+while ((i<10))
+do
+	echo "Holberton School"
+	if [ $i -eq 8 ]
+	then
+		echo "Hi"
+	fi
+	((i++))
+done
