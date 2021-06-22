@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#lists currently running processes(ps) for all users(a) inc those w/o TTY(x) in user-oriented format(u) showing proccess hierarchy(-H) then finding the lines containing bash (grep bash)
+# shellcheck disable=SC2009
+ps axu -H | grep bash
