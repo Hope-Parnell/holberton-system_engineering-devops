@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#lists currently running processes(ps) for all users(a) inc those w/o TTY(x) in user-oriented format(u)
+#showing proccess hierarchy(-H)
+ps ax u -H
