@@ -6,7 +6,7 @@ sudo apt-get -y install nginx
 echo "Hello World" | sudo tee /var/www/html/index.html
 echo "Ceci n'est pas une page" | sudo tee /etc/nginx/error404.html
 sudo service nginx start
-string="server_name webcarlos.tech;\n\tlocation \/redirect_me {\n\t\treturn 301 https:\/\/www.youtube.com\/watch\?v=QH2-TGUlwu4;\n\t}"
+string="server_name hopeparnell.tech;\n\tlocation\/redirect_me {\n\t\treturn 301 https:\/\/www.youtube.com\/watch\?v=QH2-TGUlwu4;\n\t}"
 err404="\terror_page 404 \/error404.html;\n\tlocation = \/error404.html {\n\t\tinternal;\n\t}"
 both="${string}\n${err404}"
 sudo sed -i "s/server_name _;/$both/" /etc/nginx/sites-enabled/default
