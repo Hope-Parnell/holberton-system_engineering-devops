@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Configures HaProxy
+sudo apt-get -y update
+sudo apt-get -y install haproxy=2.0.\*
+file=/etc/haproxy/haproxy.cfg
+sudo echo -e "frontend haproxy
+\tbind *:80
+\tmode http
+\tdefault_backend nodes" | sudo tee -a $file
+sudo echo -e "backend nodes
+\tmode http
+\tbalance roundrobin
+\toption forwardfor
+\thttp-request set-header X-Forwarded-Port %[dst_port]
+\tserver 3251-web-01 35.227.86.94:80 check
+\tserver 3251-web-02 535.237.252.121:80 check" | sudo tee -a $file
+sudo service haproxy restart
