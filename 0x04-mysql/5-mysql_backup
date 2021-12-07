@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# does a mysqldump and compresses it into a tarfile with a date format
+mysqldump -uroot -p"$1" --all-databases > backup.sql
+tar -czf "$(date +"%d-%m-%Y").tar.gz" backup.sql
