@@ -19,8 +19,8 @@ if __name__ == "__main__":
 
     for task in tasks:
         j_tasks[user_id].append({"task": task.get('title'),
-                                "completed": task.get('completed'),
-                                "username": username})
+                                 "completed": task.get('completed'),
+                                 "username": username})
 
     with open('{}.json'.format(user_id), 'w') as jsonfile:
         json.dump(j_tasks, jsonfile)
