@@ -17,8 +17,7 @@ if __name__ == "__main__":
         'https://jsonplaceholder.typicode.com/users/{}/todos'.
         format(user_id)).json()
 
-    print('Employee {} is done with tasks\
-          ({}/{})'.
+    print('Employee {} is done with tasks({}/{})'.
           format(name, len(tasks_completed), len(total_tasks)))
     for item in tasks_completed:
         print('\t {}'.format(item.get('title')))
