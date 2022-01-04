@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """gathers todo info based on input id and saves to json"""
-from sys import argv
-import requests
 import json
+import requests
+from sys import argv
 
 
 if __name__ == "__main__":
