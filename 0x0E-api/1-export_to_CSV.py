@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""gathers todo info based on input id"""
+"""gathers todo info based on input id and saves to csv"""
 from sys import argv
 import requests
 import csv

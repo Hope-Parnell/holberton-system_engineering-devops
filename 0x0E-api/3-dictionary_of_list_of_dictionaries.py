@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""gathers todo info based on input id"""
+"""saves todo info for all users in json"""
 import requests
 import json
 
