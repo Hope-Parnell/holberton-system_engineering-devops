@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """gathers todo info based on input id"""
-import requests
-from sys import argv
 
+
+import requests
+import sys
 
 
 if __name__ == "__main__":
-    user_id = argv[1]
+    user_id = sys.argv[1]
     user_info = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}'.
         format(user_id)).json()
